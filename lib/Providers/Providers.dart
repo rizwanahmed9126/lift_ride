@@ -1,0 +1,1 @@
+import 'package:flutter/cupertino.dart';class UsingProviders extends ChangeNotifier{  int seats=1;  int getSeats()=> seats;  decSeats(){    if (seats > 1)      seats--;    notifyListeners();  }  incSeats(){    if (seats < 4)      seats++;    notifyListeners();  }}
